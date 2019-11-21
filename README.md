@@ -48,18 +48,14 @@ ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
 
 ``` r
 ym_add_months(c(200902, 201912), months = c(1, -12))
-#> Warning in ym_add_months(c(200902, 201912), months = c(1, -12)): NAs
-#> introducidos por coerción
-#> [1] NA NA
+#> [1] 200903 201812
 ```
 
 ### `ym_format`
 
 ``` r
 ym_format(c(200902, 201912), "%B del %Y")
-#> Warning in ym_format(c(200902, 201912), "%B del %Y"): NAs introducidos por
-#> coerción
-#> [1] NA NA
+#> [1] "febrero del 2009"   "diciembre del 2019"
 ```
 
 ### `ym_div`
