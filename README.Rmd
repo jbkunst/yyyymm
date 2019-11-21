@@ -73,3 +73,10 @@ ym_div(year, ng = 3)
 
 ym_div(year, ng = 4)
 ```
+
+### `ym_seq`
+
+```{r}
+ym_seq(201303, 201512)
+```
+

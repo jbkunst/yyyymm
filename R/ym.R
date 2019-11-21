@@ -56,7 +56,7 @@ ym_div <- function(ym = format(ymd(20170101) + months(0:11), "%Y%m"), ng = 4) {
 
   lubridate::month(ymd) <- new_ms
 
-  format(ymd, "%Y%m")
+  as.numeric(format(ymd, "%Y%m"))
 
 }
 
@@ -71,7 +71,7 @@ ym_div <- function(ym = format(ymd(20170101) + months(0:11), "%Y%m"), ng = 4) {
 #'
 #' @export
 ym_format <- function(ym = c(200902, 201912), format = "%Y%m%d", day = 1){
-  format(lubridate::ymd(paste0(ym, stringr::str_pad(day, 2, pad = "0"))), format)
+  as.numeric(format(lubridate::ymd(paste0(ym, stringr::str_pad(day, 2, pad = "0"))), format))
 }
 
 
@@ -87,5 +87,22 @@ ym_format <- function(ym = c(200902, 201912), format = "%Y%m%d", day = 1){
 ym_add_months <- function(ym = c(201201, 201303), months = c(1, -12)) {
 
   dates <- ym_to_date(ym)
-  format(dates + months(months))
+  as.numeric(format(dates + months(months)))
+}
+
+
+#' Sequence from
+#'
+#' @param from ym
+#' @param to ym
+#' @param by Same argument in `seq.Date`, can be "month" or "year".
+#' @examples
+#'
+#' ym_seq(201303, 201512)
+#'
+#' @export
+ym_seq <- function(from = 200903, to = 201512, by = "month") {
+
+  as.numeric(format(seq.Date(ym_to_date(from), ym_to_date(to), by = by), "%Y%m"))
+
 }
