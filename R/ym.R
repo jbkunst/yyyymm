@@ -71,7 +71,7 @@ ym_div <- function(ym = format(ymd(20170101) + months(0:11), "%Y%m"), ng = 4) {
 #'
 #' @export
 ym_format <- function(ym = c(200902, 201912), format = "%Y%m%d", day = 1){
-  as.numeric(format(lubridate::ymd(paste0(ym, stringr::str_pad(day, 2, pad = "0"))), format))
+  format(lubridate::ymd(paste0(ym, stringr::str_pad(day, 2, pad = "0"))), format)
 }
 
 
@@ -87,7 +87,7 @@ ym_format <- function(ym = c(200902, 201912), format = "%Y%m%d", day = 1){
 ym_add_months <- function(ym = c(201201, 201303), months = c(1, -12)) {
 
   dates <- ym_to_date(ym)
-  as.numeric(format(dates + months(months)))
+  as.numeric(format(dates + months(months), "%Y%m"))
 }
 
 
