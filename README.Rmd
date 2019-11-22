@@ -63,17 +63,6 @@ ym_add_months(c(200902, 201912), months = c(1, -12))
 ym_format(c(200902, 201912), "%B del %Y")
 ```
 
-### `ym_div`
-
-```{r}
-year <- format(lubridate::ymd(20170101) + months(0:11), "%Y%m")
-year
-
-ym_div(year, ng = 3)
-
-ym_div(year, ng = 4)
-```
-
 ### `ym_seq`
 
 ```{r}
@@ -94,4 +83,13 @@ yyyymm:::is.yyyymm(201913)
 yyyymm:::is.yyyymm(201913.5)
 ```
 
+### `ym_div`
 
+```{r}
+year <- format(lubridate::ymd(20170101) + months(0:11), "%Y%m")
+year
+
+ym_div(year, ng = 3)
+
+ym_div(year, ng = 4)
+```
