@@ -1,3 +1,17 @@
+is.yyyymm <- function(ym) {
+
+  # ym <- c(201299)
+  # ym <- c(201201.4, 201205)
+  ymn <- as.numeric(ym)
+  month <- as.numeric(stringr::str_sub(as.character(ym),-2,-1))
+
+  stopifnot(ym > 100001, ym <= 999912)
+  stopifnot(ym == as.integer(ym))
+  stopifnot(month >= 1, month <= 12)
+
+  TRUE
+}
+
 #' Year month string to date
 #' @param ym ym
 #' @param day day
@@ -11,6 +25,7 @@
 #'
 #' @export
 ym_to_date <- function(ym = c(200902, 201912), day = 1){
+  is.yyyymm(ym)
   lubridate::ymd(paste0(ym, stringr::str_pad(day, 2, pad = "0")))
 }
 
@@ -25,7 +40,8 @@ ym_to_date <- function(ym = c(200902, 201912), day = 1){
 #'
 #' @export
 ym_diff <- function(ym = c(200902, 201912), ym2 = c(200901, 201712)) {
-
+  is.yyyymm(ym)
+  is.yyyymm(ym2)
   ed <- ym_to_date(ym)
   sd <- ym_to_date(ym2)
 
@@ -38,7 +54,7 @@ ym_diff <- function(ym = c(200902, 201912), ym2 = c(200901, 201712)) {
 #' @param ng number of groups.
 #' @export
 ym_div <- function(ym = format(ymd(20170101) + months(0:11), "%Y%m"), ng = 4) {
-
+  is.yyyymm(ym)
   stopifnot(ng %in% c(2,3,4,6))
 
   months_per_group <- 12/ng
@@ -71,6 +87,7 @@ ym_div <- function(ym = format(ymd(20170101) + months(0:11), "%Y%m"), ng = 4) {
 #'
 #' @export
 ym_format <- function(ym = c(200902, 201912), format = "%Y%m%d", day = 1){
+  is.yyyymm(ym)
   format(lubridate::ymd(paste0(ym, stringr::str_pad(day, 2, pad = "0"))), format)
 }
 
@@ -85,7 +102,7 @@ ym_format <- function(ym = c(200902, 201912), format = "%Y%m%d", day = 1){
 #'
 #' @export
 ym_add_months <- function(ym = c(201201, 201303), months = c(1, -12)) {
-
+  is.yyyymm(ym)
   dates <- ym_to_date(ym)
   as.numeric(format(dates + months(months), "%Y%m"))
 }
@@ -102,7 +119,5 @@ ym_add_months <- function(ym = c(201201, 201303), months = c(1, -12)) {
 #'
 #' @export
 ym_seq <- function(from = 200903, to = 201512, by = "month") {
-
   as.numeric(format(seq.Date(ym_to_date(from), ym_to_date(to), by = by), "%Y%m"))
-
 }

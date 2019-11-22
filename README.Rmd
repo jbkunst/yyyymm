@@ -80,3 +80,18 @@ ym_div(year, ng = 4)
 ym_seq(201303, 201512)
 ```
 
+### `is.yyyymm`
+
+```{r, error=TRUE}
+yyyymm:::is.yyyymm(999)
+
+yyyymm:::is.yyyymm(1111111)
+
+yyyymm:::is.yyyymm(201900)
+
+yyyymm:::is.yyyymm(201913)
+
+yyyymm:::is.yyyymm(201913.5)
+```
+
+

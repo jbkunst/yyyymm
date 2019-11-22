@@ -84,3 +84,22 @@ ym_seq(201303, 201512)
 #> [21] 201411 201412 201501 201502 201503 201504 201505 201506 201507 201508
 #> [31] 201509 201510 201511 201512
 ```
+
+### `is.yyyymm`
+
+``` r
+yyyymm:::is.yyyymm(999)
+#> Error in yyyymm:::is.yyyymm(999): ym > 100001 is not TRUE
+
+yyyymm:::is.yyyymm(1111111)
+#> Error in yyyymm:::is.yyyymm(1111111): ym <= 999912 is not TRUE
+
+yyyymm:::is.yyyymm(201900)
+#> Error in yyyymm:::is.yyyymm(201900): month >= 1 is not TRUE
+
+yyyymm:::is.yyyymm(201913)
+#> Error in yyyymm:::is.yyyymm(201913): month <= 12 is not TRUE
+
+yyyymm:::is.yyyymm(201913.5)
+#> Error in yyyymm:::is.yyyymm(201913.5): ym == as.integer(ym) is not TRUE
+```
