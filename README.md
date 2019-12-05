@@ -11,23 +11,12 @@ The goal of yyyymm is to …
 
 ## Installation
 
-You can install the released version of yyyymm from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("yyyymm")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
 ``` r
 # install.packages("devtools")
 devtools::install_github("jbkunst/yyyymm")
 ```
 
 ## Examples
-
-This is a basic example which shows you how to solve a common problem:
 
 ### `ym_to_date`
 
