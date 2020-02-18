@@ -2,8 +2,7 @@
 % Please edit documentation in R/ym.R
 \name{ym_diff}
 \alias{ym_diff}
-\title{Year month string to date
-http://stackoverflow.com/questions/1995933/number-of-months-between-two-dates/26640698#26640698}
+\title{Year month string to date}
 \usage{
 ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
 }
@@ -14,10 +13,10 @@ ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
 }
 \description{
 Year month string to date
-http://stackoverflow.com/questions/1995933/number-of-months-between-two-dates/26640698#26640698
 }
 \examples{
-
 ym_diff(c(200902, 201912), c(200901, 201712))
-
+}
+\references{
+http://stackoverflow.com/questions/1995933/number-of-months-between-two-dates/26640698#26640698
 }

@@ -9,7 +9,7 @@ ym_div(ym = format(ymd(20170101) + months(0:11), "\%Y\%m"), ng = 4)
 \arguments{
 \item{ym}{ym}
 
-\item{ng}{number of groups.}
+\item{ng}{number of groups}
 }
 \description{
 Year month to semester, quarter, trimester

@@ -7,13 +7,12 @@
 
 <!-- badges: end -->
 
-The goal of yyyymm is to make easier living with \_periodo\_s format.
+The goal of `yyyymm` is to make life easier with period format.
 
 ## Installation
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("jbkunst/yyyymm")
+source("https://install-github.me/jbkunst/yyyymm")
 ```
 
 ## Examples
@@ -46,7 +45,7 @@ ym_add_months(c(200902, 201912), months = c(1, -12))
 
 ``` r
 ym_format(c(200902, 201912), "%B del %Y")
-#> [1] "febrero del 2009"   "diciembre del 2019"
+#> [1] "February del 2009" "December del 2019"
 ```
 
 ### `ym_seq`
