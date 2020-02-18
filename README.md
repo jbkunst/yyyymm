@@ -10,7 +10,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 [![Codecov test
 coverage](https://codecov.io/gh/jbkunst/yyyymm/branch/master/graph/badge.svg)](https://codecov.io/gh/jbkunst/yyyymm/branch/master)
 [![R build
-status](https://github.com/jbkunst/yyyymm/workflows/R-CMD-check/badge.svg)](https://github.com/jbkunst/yyyymm)
+status](https://github.com/jbkunst/yyyymm/workflows/R-CMD-check/badge.svg)](https://github.com/jbkunst/yyyymm/actions?workflow=R-CMD-check)
 <!-- badges: end -->
 
 The goal of `yyyymm::` is to make life easier with period format.
