@@ -2,7 +2,7 @@
 % Please edit documentation in R/ym.R
 \name{ym_seq}
 \alias{ym_seq}
-\title{Sequence from}
+\title{Sequence of months}
 \usage{
 ym_seq(from = 200903, to = 201512, by = "month")
 }
@@ -14,10 +14,8 @@ ym_seq(from = 200903, to = 201512, by = "month")
 \item{by}{Same argument in `seq.Date`, can be "month" or "year".}
 }
 \description{
-Sequence from
+Sequence of months
 }
 \examples{
-
 ym_seq(201303, 201512)
-
 }

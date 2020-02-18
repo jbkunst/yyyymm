@@ -18,21 +18,22 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of yyyymm is to make easier living with _periodo_s format.
+The goal of `yyyymm::` is to make life easier with period format.
 
 ## Installation
 
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("jbkunst/yyyymm")
+source("https://install-github.me/jbkunst/yyyymm")
 ```
+
 ## Examples
 
 This is a basic example which shows you how to solve a common problem:
 
 
 ### `ym_to_date`
+
 ```{r}
 library(yyyymm)
 ym_to_date(ym = c(200902, 201912), day = 1)
@@ -53,7 +54,7 @@ ym_add_months(c(200902, 201912), months = c(1, -12))
 ### `ym_format`
 
 ```{r}
-ym_format(c(200902, 201912), "%B del %Y")
+ym_format(c(200902, 201912), "%B %Y")
 ```
 
 ### `ym_seq`
@@ -74,22 +75,20 @@ ym_div(seqym, ng = 4)
 ```
 
 
-### `is.yyyymm`
+### `is_yyyymm`
 
 ```{r, error=TRUE}
-yyyymm:::is.yyyymm(999)
+yyyymm:::is_yyyymm(999)
 
-yyyymm:::is.yyyymm(1111111)
+yyyymm:::is_yyyymm(1111111)
 
-yyyymm:::is.yyyymm(201900)
+yyyymm:::is_yyyymm(201900)
 
-yyyymm:::is.yyyymm(201913)
+yyyymm:::is_yyyymm(201913)
 
-yyyymm:::is.yyyymm(201913.5)
+yyyymm:::is_yyyymm(201913.5)
 ```
-
 
 ## Code of Conduct
 
-Please note that the 'yyyymm' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
- 
+Please note that `yyyymm::` project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.

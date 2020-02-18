@@ -2,7 +2,7 @@
 % Please edit documentation in R/ym.R
 \name{ym_add_months}
 \alias{ym_add_months}
-\title{Add mothns to a year month}
+\title{Add months to a year month}
 \usage{
 ym_add_months(ym = c(201201, 201303), months = c(1, -12))
 }
@@ -12,10 +12,8 @@ ym_add_months(ym = c(201201, 201303), months = c(1, -12))
 \item{months}{months}
 }
 \description{
-Add mothns to a year month
+Add months to a year month
 }
 \examples{
-
 ym_add_months(c(200902, 201912), months = c(1, -12))
-
 }
