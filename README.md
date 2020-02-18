@@ -5,9 +5,15 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Codecov test
+coverage](https://codecov.io/gh/jbkunst/yyyymm/branch/master/graph/badge.svg)](https://codecov.io/gh/jbkunst/yyyymm/branch/master)
+[![R build
+status](https://github.com/jbkunst/yyyymm/workflows/R-CMD-check/badge.svg)](https://github.com/jbkunst/yyyymm)
 <!-- badges: end -->
 
-The goal of `yyyymm` is to make life easier with period format.
+The goal of `yyyymm::` is to make life easier with period format.
 
 ## Installation
 
@@ -44,8 +50,8 @@ ym_add_months(c(200902, 201912), months = c(1, -12))
 ### `ym_format`
 
 ``` r
-ym_format(c(200902, 201912), "%B del %Y")
-#> [1] "February del 2009" "December del 2019"
+ym_format(c(200902, 201912), "%B %Y")
+#> [1] "February 2009" "December 2019"
 ```
 
 ### `ym_seq`
@@ -81,27 +87,27 @@ ym_div(seqym, ng = 4)
 #> [31] 201507 201510 201510 201510
 ```
 
-### `is.yyyymm`
+### `is_yyyymm`
 
 ``` r
-yyyymm:::is.yyyymm(999)
-#> Error in yyyymm:::is.yyyymm(999): ym > 100001 is not TRUE
+yyyymm:::is_yyyymm(999)
+#> Error in yyyymm:::is_yyyymm(999): ym > 100001 is not TRUE
 
-yyyymm:::is.yyyymm(1111111)
-#> Error in yyyymm:::is.yyyymm(1111111): ym <= 999912 is not TRUE
+yyyymm:::is_yyyymm(1111111)
+#> Error in yyyymm:::is_yyyymm(1111111): ym <= 999912 is not TRUE
 
-yyyymm:::is.yyyymm(201900)
-#> Error in yyyymm:::is.yyyymm(201900): month >= 1 is not TRUE
+yyyymm:::is_yyyymm(201900)
+#> Error in yyyymm:::is_yyyymm(201900): month >= 1 is not TRUE
 
-yyyymm:::is.yyyymm(201913)
-#> Error in yyyymm:::is.yyyymm(201913): month <= 12 is not TRUE
+yyyymm:::is_yyyymm(201913)
+#> Error in yyyymm:::is_yyyymm(201913): month <= 12 is not TRUE
 
-yyyymm:::is.yyyymm(201913.5)
-#> Error in yyyymm:::is.yyyymm(201913.5): ym == as.integer(ym) is not TRUE
+yyyymm:::is_yyyymm(201913.5)
+#> Error in yyyymm:::is_yyyymm(201913.5): ym == as.integer(ym) is not TRUE
 ```
 
 ## Code of Conduct
 
-Please note that the ‘yyyymm’ project is released with a [Contributor
-Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
-you agree to abide by its terms.
+Please note that `yyyymm::` project is released with a [Contributor Code
+of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you
+agree to abide by its terms.

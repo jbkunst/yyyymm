@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![Codecov test coverage](https://codecov.io/gh/jbkunst/yyyymm/branch/master/graph/badge.svg)](https://codecov.io/gh/jbkunst/yyyymm/branch/master/graph/badge.svg)
+[![Codecov test coverage](https://codecov.io/gh/jbkunst/yyyymm/branch/master/graph/badge.svg)](https://codecov.io/gh/jbkunst/yyyymm/branch/master)
 [![R build status](https://github.com/jbkunst/yyyymm/workflows/R-CMD-check/badge.svg)](https://github.com/jbkunst/yyyymm)
 <!-- badges: end -->
 
