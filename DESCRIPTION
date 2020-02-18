@@ -1,12 +1,23 @@
 Package: yyyymm
-Title: What the Package Does (One Line, Title Case)
+Title: Makes Life Easier With Period Format.
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Joshua",
-           family = "Kunst",
-           role = c("aut", "cre"),
-           email = "jbkunst@gmail.com")
-Description: What the package does (one paragraph).
+Authors@R: c(
+  person(given = "Joshua",
+         family = "Kunst",
+         role = c("aut", "cre"),
+         email = "jbkunst@gmail.com"),
+  person(given = "Mauricio",
+         family = "Vargas",
+         role = "ctb",
+         email = "mvargas@dcc.uchile.cl",
+         comment = c(ORCID = "0000-0003-1017-7574"))
+  )
+Description: A wrapper around lubridate and stringr to perform operations
+  on period format objects. Makes really easy to generate sequences of periods,
+  add months, convert to semester/quarter/trimester, substract dates, and convert
+  periods to dates.
+URL: https://github.com/jbkunst/yyyymm
+BugReports: https://github.com/jbkunst/yyyymm/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
