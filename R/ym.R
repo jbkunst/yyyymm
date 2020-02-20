@@ -111,3 +111,18 @@ ym_add_months <- function(ym = c(201201, 201303), months = c(1, -12)) {
 ym_seq <- function(from = 200903, to = 201512, by = "month") {
   as.numeric(format(seq.Date(ym_to_date(from), ym_to_date(to), by = by), "%Y%m"))
 }
+
+
+
+#' Date to period string
+#' @param d yyyy-mm-dd or any valid date or string coercible to date
+#' @examples
+#' dtp <- date_to_ym(as.Date(c("2009-02-01", "2019-12-01")))
+#' dtp
+#' class(dtp)
+#' @export
+date_to_ym <- function(d = as.Date(c("2009-02-01", "2019-12-01"))) {
+  d <- try(as.Date(d))
+  stopifnot(all(is.Date(d)) == TRUE)
+  return(paste0(year(d), str_pad(month(d), 2, "left", "0")))
+}
