@@ -1,0 +1,12 @@
+template:
+  bootstrap: 5
+  bootswatch: litera
+  bslib:
+    pkgdown-nav-height: 100px
+authors:
+  Joshua Kunst:
+    href: http://jkunst.com
+navbar:
+  right:
+  - icon: fa-github-alt
+    href: https://github.com/jbkunst/yyyymm
