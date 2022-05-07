@@ -30,67 +30,24 @@ The goal of `yyyymm::` is to make life easier with period format.
 source("https://install-github.me/jbkunst/yyyymm")
 ```
 
-## Examples
+## Some Examples
 
 This is a basic example which shows you how to solve a common problem:
-
-
-### `ym_to_date`
 
 ```{r}
 library(yyyymm)
 ym_to_date(ym = c(200902, 201912), day = 1)
 ```
 
-### `ym_diff`
+Get month differences:
 
 ```{r}
 ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
-```
 
-### `ym_add_months`
 
-```{r}
 ym_add_months(c(200902, 201912), months = c(1, -12))
 ```
 
-### `ym_format`
-
-```{r}
-ym_format(c(200902, 201912), "%B %Y")
-```
-
-### `ym_seq`
-
-```{r}
-ym_seq(201303, 201512)
-```
-
-### `ym_div`
-
-```{r}
-seqym <- ym_seq(201303, 201512)
-seqym
-
-ym_div(seqym, ng = 3)
-
-ym_div(seqym, ng = 4)
-```
-
-
-### `is_yyyymm`
-
-```{r, error=TRUE}
-yyyymm:::is_yyyymm(999)
-
-yyyymm:::is_yyyymm(1111111)
-
-yyyymm:::is_yyyymm(201900)
-
-yyyymm:::is_yyyymm(201913)
-
-yyyymm:::is_yyyymm(201913.5)
-```
 
 ## Code of Conduct
 

@@ -1,5 +1,5 @@
 Package: yyyymm
-Title: Makes Life Easier With Period Format.
+Title: Makes Life Easier With Period Format
 Version: 0.0.0.9000
 Authors@R: c(
   person(given = "Joshua",
@@ -15,7 +15,7 @@ Authors@R: c(
 Description: A wrapper around lubridate and stringr to perform operations
   on period format objects. Makes really easy to generate sequences of periods,
   add months, convert to semester/quarter/trimester, substract dates, and convert
-  periods to dates.
+  periods to dates. Also contains some scale_x_date goodies and helpers.
 URL: https://github.com/jbkunst/yyyymm
 BugReports: https://github.com/jbkunst/yyyymm/issues
 License: GPL-3
@@ -23,8 +23,10 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     lubridate,
-    stringr
-RoxygenNote: 7.0.2
+    stringr,
+    ggplot2,
+    dplyr
+RoxygenNote: 7.1.2
 Suggests: 
     testthat (>= 2.1.0),
     covr

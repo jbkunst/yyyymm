@@ -1,0 +1,122 @@
+---
+title: "Introduction to `{yyyymm}`"
+output: rmarkdown::html_vignette
+date: "`r Sys.Date()`"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message=FALSE, 
+  warning=FALSE
+)
+```
+
+## Example to work with `yyyymm` format
+
+
+```{r}
+library(yyyymm)
+ym_to_date(ym = c(200902, 201912), day = 1)
+
+
+ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
+
+
+ym_add_months(c(200902, 201912), months = c(1, -12))
+
+
+ym_format(c(200902, 201912), "%B %Y")
+
+
+ym_seq(201303, 201512)
+
+
+seqym <- ym_seq(201303, 201512)
+seqym
+
+ym_div(seqym, ng = 3)
+
+ym_div(seqym, ng = 4)
+```
+
+
+## `{ggplot2}` helpers
+
+
+### `scale_x_date` helper
+
+```{r}
+library(ggplot2)
+
+economics2 <- subset(economics, date >= lubridate::ymd(20130801))
+
+p <- ggplot(economics2, aes(date, psavert)) +
+  geom_line() +
+  geom_point() 
+
+p
+
+
+p +
+  scale_x_date(labels = date_format())
+
+p +
+  scale_x_date(labels = date_format(date_label = "%m"))
+
+
+p +
+  scale_x_date(
+    labels = date_format(),
+    date_minor_breaks = "1 month",
+    breaks = "3 month"
+    )
+
+
+
+
+```
+
+### `scale_x_date_year`
+
+```{r}
+p + scale_x_date_year()
+
+# fix with
+p + scale_x_date_year(date_breaks = "1 year")
+
+p + scale_x_date_year(date_breaks = "1 year", date_minor_breaks = "1 month")
+
+p + scale_x_date_year(date_breaks = "1 year", date_minor_breaks = "3 month")
+```
+
+### `scale_x_date_yyyymm`
+
+```{r}
+p +
+  scale_x_date_yyyymm() 
+
+p +
+  scale_x_date_yyyymm(
+    date_breaks = "6 months",
+    date_minor_breaks = "3 month"
+    )
+```
+
+
+## Function to validate `yyyymm`
+
+```{r, error=TRUE}
+yyyymm:::is_yyyymm(999)
+
+yyyymm:::is_yyyymm(1111111)
+
+yyyymm:::is_yyyymm(201900)
+
+yyyymm:::is_yyyymm(201913)
+
+yyyymm:::is_yyyymm(201913.5)
+```

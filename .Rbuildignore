@@ -4,3 +4,8 @@
 ^LICENSE\.md$
 ^CODE_OF_CONDUCT\.md$
 ^\.github/workflows/R-CMD-check\.yaml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^.github$
+^vignettes/.*$

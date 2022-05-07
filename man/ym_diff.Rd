@@ -15,7 +15,9 @@ ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
 Year month string to date
 }
 \examples{
+
 ym_diff(c(200902, 201912), c(200901, 201712))
+
 }
 \references{
 http://stackoverflow.com/questions/1995933/number-of-months-between-two-dates/26640698#26640698
