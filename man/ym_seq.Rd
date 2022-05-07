@@ -17,5 +17,7 @@ ym_seq(from = 200903, to = 201512, by = "month")
 Sequence of months
 }
 \examples{
+
 ym_seq(201303, 201512)
+
 }

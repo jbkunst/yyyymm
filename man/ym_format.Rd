@@ -19,5 +19,7 @@ Format a year month into a specific date format
 A wrapper for ym_to_date and format:
 }
 \examples{
-ym_format(c(200902, 201912), "\%B del \%Y")
+
+ym_format(c(200902, 201912), "\%B, \%Y")
+
 }
