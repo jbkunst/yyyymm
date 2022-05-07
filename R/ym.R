@@ -136,8 +136,6 @@ ym_seq <- function(from = 200903, to = 201512, by = "month") {
 
 }
 
-
-
 #' Date to period string
 #' @param d yyyy-mm-dd or any valid date or string coercible to date
 #' @examples
