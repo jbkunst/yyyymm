@@ -22,10 +22,19 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/date_format_jy.html</loc>
+  </url>
+  <url>
+    <loc>/reference/date_to_ym.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
     <loc>/reference/is_yyyymm.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_x_date_year.html</loc>
   </url>
   <url>
     <loc>/reference/ym_add_months.html</loc>
