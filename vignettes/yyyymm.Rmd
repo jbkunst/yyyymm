@@ -47,7 +47,7 @@ ym_div(seqym, ng = 4)
 ## `{ggplot2}` helpers
 
 
-### `scale_x_date` helper
+### `date_format_jy` (`scale_x_date` helper)
 
 ```{r}
 library(ggplot2)
@@ -60,13 +60,11 @@ p <- ggplot(economics2, aes(date, psavert)) +
 
 p
 
+p +
+  scale_x_date(labels = date_format_jy())
 
 p +
-  scale_x_date(labels = date_format())
-
-p +
-  scale_x_date(labels = date_format(date_label = "%m"))
-
+  scale_x_date(labels = date_format_jy(date_label = "%m"))
 
 p +
   scale_x_date(
@@ -74,10 +72,6 @@ p +
     date_minor_breaks = "1 month",
     breaks = "3 month"
     )
-
-
-
-
 ```
 
 ### `scale_x_date_year`

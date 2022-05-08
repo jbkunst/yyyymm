@@ -16,7 +16,11 @@ scale_date_fmt <- function(x, date_label = "%b") {
 
 }
 
-date_format <- function(x, date_label = "%b"){
+#' A date format helper to show the year in January
+#' @param x vector of date class
+#' @param date_label the formar of date
+#' @export
+date_format_jy <- function(x, date_label = "%b"){
   function(x){
     scale_date_fmt(x, date_label = date_label)
   }
