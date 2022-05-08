@@ -68,7 +68,7 @@ p +
 
 p +
   scale_x_date(
-    labels = date_format(),
+    labels = date_format_jy(),
     date_minor_breaks = "1 month",
     breaks = "3 month"
     )
