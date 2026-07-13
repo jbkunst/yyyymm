@@ -144,6 +144,10 @@ ym_seq <- function(from = 200903, to = 201512, by = "month") {
 #' class(dtp)
 #' @export
 date_to_ym <- function(d = as.Date(c("2009-02-01", "2019-12-01"))) {
+  if (is.numeric(d) && !inherits(d, c("Date", "POSIXt"))) {
+    stop("`d` must be a date object or a character vector coercible to Date.", call. = FALSE)
+  }
+
   d <- try(as.Date(d))
   stopifnot(all(is.Date(d)) == TRUE)
   return(paste0(year(d), str_pad(month(d), 2, "left", "0")))
