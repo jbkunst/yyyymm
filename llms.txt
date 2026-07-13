@@ -1,0 +1,71 @@
+# yyyymm
+
+The goal of `yyyymm::` is to make life easier with period format.
+
+## Installation
+
+``` r
+
+source("https://install-github.me/jbkunst/yyyymm")
+```
+
+## Some Examples
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+
+library(yyyymm)
+ym_to_date(ym = c(200902, 201912), day = 1)
+#> [1] "2009-02-01" "2019-12-01"
+```
+
+Get month differences:
+
+``` r
+
+ym_diff(ym = c(200902, 201912), ym2 = c(200901, 201712))
+#> [1]  1 24
+
+
+ym_add_months(c(200902, 201912), months = c(1, -12))
+#> [1] 200903 201812
+```
+
+## Code of Conduct
+
+Please note that `yyyymm::` project is released with a [Contributor Code
+of Conduct](https://jkunst.com/yyyymm/CODE_OF_CONDUCT.md). By
+contributing to this project, you agree to abide by its terms.
+
+# Package index
+
+## All functions
+
+- [`date_format_jy()`](https://jkunst.com/yyyymm/reference/date_format_jy.md)
+  : A date format helper to show the year in January
+- [`date_to_ym()`](https://jkunst.com/yyyymm/reference/date_to_ym.md) :
+  Date to period string
+- [`scale_x_date_year()`](https://jkunst.com/yyyymm/reference/scale_x_date_year.md)
+  [`scale_x_date_yyyymm()`](https://jkunst.com/yyyymm/reference/scale_x_date_year.md)
+  : Auxiliar shortcut scales with opinionated pre-sets
+- [`ym_add_months()`](https://jkunst.com/yyyymm/reference/ym_add_months.md)
+  : Add months to a year month
+- [`ym_diff()`](https://jkunst.com/yyyymm/reference/ym_diff.md) : Year
+  month string to date
+- [`ym_div()`](https://jkunst.com/yyyymm/reference/ym_div.md) : Year
+  month to semester, quarter, trimester
+- [`ym_format()`](https://jkunst.com/yyyymm/reference/ym_format.md) :
+  Format a year month into a specific date format A wrapper for
+  ym_to_date and format:
+- [`ym_seq()`](https://jkunst.com/yyyymm/reference/ym_seq.md) : Sequence
+  of months
+- [`ym_to_date()`](https://jkunst.com/yyyymm/reference/ym_to_date.md) :
+  Year month string to date
+
+# Articles
+
+### All vignettes
+
+- [Introduction to
+  \`{yyyymm}\`](https://jkunst.com/yyyymm/articles/yyyymm.md):

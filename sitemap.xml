@@ -1,60 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jkunst.com/yyyymm/404.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/articles/yyyymm.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/date_format_jy.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/date_to_ym.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/is_yyyymm.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/scale_x_date_year.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/ym_add_months.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/ym_diff.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/ym_div.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/ym_format.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/ym_seq.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/ym_to_date.html</loc>
-  </url>
-  <url>
-    <loc>https://jkunst.com/yyyymm/reference/yyyymm-exports.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://jkunst.com/yyyymm/404.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/LICENSE.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/articles/index.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/articles/yyyymm.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/authors.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/index.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/date_format_jy.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/date_to_ym.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/index.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/is_yyyymm.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/scale_x_date_year.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/ym_add_months.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/ym_diff.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/ym_div.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/ym_format.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/ym_seq.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/ym_to_date.html</loc></url>
+<url><loc>https://jkunst.com/yyyymm/reference/yyyymm-exports.html</loc></url>
 </urlset>
+
